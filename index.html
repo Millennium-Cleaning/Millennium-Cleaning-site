@@ -3,9 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Millennium Cleaning — Химчистка мебели в Ташкенте</title>
+  <title>Millennium Cleaning — Химчистка мягкой мебели в Ташкенте</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.png" type="image/png">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background-color: #000; color: #FFD700; line-height: 1.6; }
+    header { background-color: #000; padding: 2rem; display: flex; justify-content: space-between; align-items: center; animation: fadeIn 1s ease-in; }
+    header .logo { display: flex; align-items: center; font-size: 1.8rem; font-weight: bold; }
+    header .logo img { height: 40px; margin-right: 10px; }
+    nav { display: flex; align-items: center; gap: 1rem; }
+    nav a { color: #FFD700; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+    nav a:hover { color: white; }
+    .lang-switcher { display: flex; gap: 0.5rem; margin-left: 2rem; }
+    .lang-switcher a { font-weight: bold; font-size: 1rem; padding: 0.25rem 0.5rem; border-radius: 4px; background: #FFD700; color: #000; text-decoration: none; transition: background 0.3s; }
+    .lang-switcher a:hover { background: white; }
+    section { padding: 4rem 2rem; max-width: 1000px; margin: 0 auto; animation: fadeInUp 1s ease-in-out; }
+    h2 { text-align: center; font-size: 2rem; margin-bottom: 1.5rem; }
+    ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; padding: 0; }
+    li { background: #111; padding: 1rem; border-radius: 8px; }
+    .hero { background-color: #FFD700; color: #000; text-align: center; padding: 4rem 2rem; animation: slideDown 1s ease-in-out; }
+    .hero h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+    .hero .btn { background: #000; color: #FFD700; padding: 0.8rem 2rem; font-weight: bold; border: none; border-radius: 5px; font-size: 1rem; text-decoration: none; transition: background 0.3s, color 0.3s; }
+    .hero .btn:hover { background: #FFD700; color: #000; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 2rem; }
+    .gallery img { width: 100%; border-radius: 8px; transition: transform 0.3s; }
+    .gallery img:hover { transform: scale(1.05); }
+    footer { background: #111; text-align: center; padding: 2rem; color: #FFD700; }
+    form { display: flex; flex-direction: column; gap: 1rem; max-width: 500px; margin: 2rem auto; }
+    form input, form textarea { padding: 0.8rem; border: none; border-radius: 4px; }
+    form button { background: #FFD700; color: #000; font-weight: bold; padding: 0.8rem; border: none; border-radius: 4px; cursor: pointer; transition: background 0.3s; }
+    form button:hover { background: #e6c200; }
+    @keyframes fadeInUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes slideDown { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  </style>
 </head>
 <body>
   <header>
@@ -25,5 +57,61 @@
       </div>
     </nav>
   </header>
+
+  <section class="hero">
+    <h1>Химчистка мягкой мебели в Ташкенте</h1>
+    <p>Чистота, комфорт и профессионализм — в каждом заказе.</p>
+    <a href="#contact" class="btn">Оформить заявку</a>
+  </section>
+
+  <section id="services">
+    <h2>Наши услуги</h2>
+    <ul>
+      <li>Химчистка диванов, кресел, матрасов</li>
+      <li>Удаление запахов и пятен</li>
+      <li>Обработка от шерсти животных</li>
+      <li>Выезд мастера на дом</li>
+    </ul>
+  </section>
+
+  <section id="features">
+    <h2>Почему выбирают нас</h2>
+    <ul>
+      <li>Работаем быстро и аккуратно</li>
+      <li>Гипоаллергенные средства</li>
+      <li>Гарантия качества</li>
+      <li>Обслуживаем частных и корпоративных клиентов</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Фотогалерея</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x250?text=До+и+после+1" alt="До и после 1">
+      <img src="https://via.placeholder.com/400x250?text=До+и+после+2" alt="До и после 2">
+      <img src="https://via.placeholder.com/400x250?text=До+и+после+3" alt="До и после 3">
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Отзывы клиентов</h2>
+    <blockquote>“Диван стал как новый, большое спасибо!”</blockquote>
+    <blockquote>“Оперативно приехали и всё почистили за 1 час!”</blockquote>
+  </section>
+
+  <section id="contact">
+    <h2>Оставить заявку</h2>
+    <form>
+      <input type="text" placeholder="Ваше имя" required />
+      <input type="tel" placeholder="Телефон" required />
+      <textarea rows="4" placeholder="Что нужно почистить?"></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Millennium Cleaning | +998 94 002 99 79</p>
+    <p><a href="https://www.instagram.com/millenniumcleaninguz" target="_blank" style="color: #FFD700;">Instagram</a></p>
+  </footer>
 </body>
 </html>
